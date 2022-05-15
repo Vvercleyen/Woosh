@@ -1,0 +1,87 @@
+.loginInformation{
+    background-color: #2991d9;
+    div:nth-child(1){
+        left:0;
+        img:nth-child(1){
+            transform: rotate(5deg);
+            -o-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+            -webkit-transform: rotate(5deg);
+            object-position: -5em 0em;
+            filter : invert(100%);
+        }
+        img:nth-child(2){
+            transform: rotate(190deg);
+            -o-transform: rotate(190deg);
+            -ms-transform: rotate(190deg);
+            -webkit-transform: rotate(190deg);
+        }
+    }
+    div:nth-child(2){
+        padding: 3em;
+        color: white;
+        font : "Poppins";
+        padding: 4em 0em 4em 4em;
+    }
+    border-radius: 20px 0px 0px 20px;
+}
+
+label{
+    width: 100%;
+    margin-bottom: 1em;
+    svg{
+        float : right;
+        margin-right: 0.1em;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+}
+
+input{
+    border: 1px solid black;
+    background: #F2F8FD 0% 0% no-repeat padding-box;
+    border: 1px solid #0E2E47;
+    opacity: 1;
+    border-radius: 10px;
+    height: 3em;
+}
+
+.loginRoot{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.loginForm{
+    padding : 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 20px 20px 0px;
+    background-color: white;
+    padding : 2em;
+}
+.login{
+    display:flex;
+    flex-direction: row;
+    
+}
+h3{
+    color : #2991d9;
+    width: 5em;
+}
+
+h2{
+    width : 15em;
+}
+
+
+button{
+    width: 320px;
+    height: 48px;
+    background-color: #0E2E47;
+    border-radius: 24px;
+}

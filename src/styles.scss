@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color : #f4f9fd;
+    height: 95%;
+    background-image: url("./assets/images/BrandElement.svg");
+    background-repeat: no-repeat;
+    background-position: 55em 0em;
+}
+html{
+    height: 100%;
+}
+
+
