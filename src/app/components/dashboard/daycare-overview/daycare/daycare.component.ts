@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DayCareDto } from 'src/app/models/DayCare';
 
 @Component({
   selector: 'app-daycare',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DaycareComponent implements OnInit {
 
-  
+  @Input() public daycare! : DayCareDto;
 
   constructor() { }
 

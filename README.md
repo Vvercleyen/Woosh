@@ -6,11 +6,11 @@
 
 3rd hour : Fiddling with images, attempting to place them in a correct position
 
-4th hour : 
+4th hour : Making all screens responsive
 
-5th hour : 
+5th hour : Adjusting navbar so that it works on all devices
 
-6th hour :
+6th hour : Implementing final css and fonts
 
 7th hour :
 

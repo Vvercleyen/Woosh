@@ -1,16 +1,22 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&family=Poppins&display=swap');
 
 body{
     background-color : #f4f9fd;
-    height: 95%;
+    height: 80%;
     background-image: url("./assets/images/BrandElement.svg");
     background-repeat: no-repeat;
-    background-position: 55em 0em;
+    background-position: 60em -5em;
+    font-family: 'Poppins', sans-serif;
 }
 html{
     height: 100%;
 }
 
+h1, h3, h6{
+    font-family: 'Lexend Deca', sans-serif;
+}
 

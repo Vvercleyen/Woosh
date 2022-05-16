@@ -2,6 +2,7 @@
     background-color: #2991d9;
     div:nth-child(1){
         left:0;
+        position : relative;
         img:nth-child(1){
             transform: rotate(5deg);
             -o-transform: rotate(5deg);
@@ -9,34 +10,50 @@
             -webkit-transform: rotate(5deg);
             object-position: -5em 0em;
             filter : invert(100%);
+            position: relative;
+            top: -1em;
+            left: 0;
         }
         img:nth-child(2){
             transform: rotate(190deg);
             -o-transform: rotate(190deg);
             -ms-transform: rotate(190deg);
             -webkit-transform: rotate(190deg);
+            z-index: 10;
+            position: absolute;
+            top: 8em;
+            left: 12em;
         }
     }
     div:nth-child(2){
         padding: 3em;
         color: white;
         font : "Poppins";
-        padding: 4em 0em 4em 4em;
+        padding: 4em 6em 4em 6em;
     }
     border-radius: 20px 0px 0px 20px;
 }
 
+
+
 label{
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     svg{
         float : right;
         margin-right: 0.1em;
+        color : black;
         &:hover{
             cursor: pointer;
         }
     }
+    color : #607586;
+    font-size: 0.9em;
     
+}
+
+.invalid{
+    border : solid red 1px;
 }
 
 input{
@@ -56,32 +73,93 @@ input{
 }
 
 .loginForm{
-    padding : 3em;
+    padding : 6em 9em 6em 9em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 0px 20px 20px 0px;
     background-color: white;
-    padding : 2em;
+    div{
+        position: relative;
+    }
+    .bi-info-circle{
+        position: absolute;
+        top: 0.4em;
+        right: 0;
+        width: 0.7em;
+    }
+    .bi-eye-slash{
+        width: 2em;
+        position: absolute;
+        right: 0em;
+        top: 3em;
+    }
 }
 .login{
     display:flex;
     flex-direction: row;
-    
 }
 h3{
     color : #2991d9;
     width: 5em;
 }
 
-h2{
-    width : 15em;
+h1{
+    width : 12em;
+    font-size: 2em;
 }
 
 
 button{
-    width: 320px;
-    height: 48px;
+    width: 20em;
+    height: 3em;
     background-color: #0E2E47;
     border-radius: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .loginInformation{
+        background-color: #f4f9fd;
+        div:nth-child(1){
+            display : none
+        }
+        div:nth-child(2){
+            padding: 3em;
+            color: #0e2e47;
+            font : "Poppins";
+            padding: 0em 0em 0em 3.2em;
+        }
+        border-radius: 20px 0px 0px 20px;
+        svg{
+            color : #2991d9;
+        }
+    }
+
+    .login{
+        flex-direction: column;
+    }
+
+    h3{
+        display : none;
+    }
+
+    h1{
+        width :9em;
+        color : #2991d9;
+        .lastWord{
+           color : #0e2e47
+        }
+    }
+
+    .loginForm{
+        padding : 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: white;
+        div{
+            margin : 0em 0em 1em 0em;
+        }
+    }
 }

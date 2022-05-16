@@ -1,0 +1,44 @@
+.sidebar {
+    padding: 0;
+    width: 10em;
+    height: 100%;
+    overflow: auto;
+    margin: 1em;
+    a{
+        display: block;
+        color: black;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+  }
+
+  a{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 900;
+    &:hover{
+      cursor : pointer;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  a{
+    border-bottom: solid black 1px;
+    width: 95%;
+   
+    &:last-child{
+      border-bottom: 0px;
+    }
+   
+  }
+  div{
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    width: 100%;
+  }
+
+  .sidebar{
+    width: 100%;
+    margin : 0.1em;
+    padding : 0em 0.5em;
+  }
+}

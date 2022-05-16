@@ -1,0 +1,21 @@
+nav-bar{
+    top:0;
+    position : fixed;
+    
+}
+
+div{
+    margin-top : 10em;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav-bar{
+        width: 100%;
+        background-color: #f4f9fd;
+        padding-bottom: 1em;
+    }
+    div{
+        margin-top : 5em;
+    }
+}

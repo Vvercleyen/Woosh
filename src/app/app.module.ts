@@ -7,9 +7,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavmenuComponent } from './components/dashboard/navmenu/navmenu.component';
+import { NavmenuComponent } from './components/nav-bar/navmenu/navmenu.component';
 import { DaycareOverviewComponent } from './components/dashboard/daycare-overview/daycare-overview.component';
 import { DaycareComponent } from './components/dashboard/daycare-overview/daycare/daycare.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DaycareComponent } from './components/dashboard/daycare-overview/daycar
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

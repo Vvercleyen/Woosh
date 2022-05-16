@@ -1,5 +1,5 @@
 .overview{
-    margin : 5em;
+    margin : 0em 8em;
 }
 
 h1{
@@ -9,10 +9,24 @@ h1{
 
 h5{
     margin-bottom: 1em;
+    font-weight: 900;
+    color : #0E2E47;
 }
 
 .daycares{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
+    app-daycare{
+        margin-right : 1em;
+        &:hover{
+            cursor : pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .overview{
+        margin : 1em;
+    }
 }

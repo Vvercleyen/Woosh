@@ -1,8 +1,52 @@
 .logo {
     margin : 2em;
-    
     img{
         width: 10em;
     }
 }
+
+.burger {
+    display : none;
+}
+
+
+nav {
+    display : flex;
+    flex-direction: row;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .logo{
+        margin : 2em 1.5em;
+        img{
+            width : 5em;
+        }
+    }
+
+    nav{
+        height: 4em;
+    }
+
+    navmenu{
+        position : relative;
+    }
+
+    .burger {
+        position: relative;
+        display : block;
+        top: 0.2em;
+        margin: 2em 0em 2em 1.5em;
+        svg{
+            height: 1.5em;
+            width: 1.5em;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 

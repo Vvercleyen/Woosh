@@ -1,15 +1,22 @@
 div{
     border: solid rgb(212, 212, 212) 1px;
     border-radius: 12px;
-    padding:1em;
+    padding : 0.7em;
     margin : 0.5em;
-    width: 35em;
+    width: 40em;
+    font-size: 0.8em;
 }
 
-h5{
+h6{
     color : #2991d9;
 }
 
 p{
     margin : 0px;
+}
+
+@media screen and (max-width: 768px) {
+    div{
+        width : 20em;
+    }
 }

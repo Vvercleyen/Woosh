@@ -1,6 +1,12 @@
 div{
     display:flex;
     flex-direction: row;
+    margin-left : 12em;
 }
 
 
+@media screen and (max-width: 768px) {
+    div{
+        margin-left : 0;
+    }
+}

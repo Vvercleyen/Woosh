@@ -1,8 +1,8 @@
 <div class="overview">
-    <h1>Welkom Geert</h1>
+    <h1>welkom Geert</h1>
     <h5>Selecteer het kinderdagverblijf</h5>
     <div class="daycares">
-        <app-daycare *ngFor="let daycare of this.daycares">
+        <app-daycare *ngFor="let daycare of this.daycares | async" [daycare]="daycare">
         </app-daycare>
     </div>
 </div>
