@@ -10,7 +10,7 @@ export class DashboardComponent implements OnInit {
 
   constructor() { 
     document.body.style.backgroundColor = "white";
-    document.body.style.backgroundImage = "url('../../../../assets/images/Path11802.svg'), url('../../../../assets/images/Planet.svg')";
+    document.body.style.backgroundImage = "url('assets/images/Path11802.svg'), url('assets/images/Planet.svg')";
     document.body.style.backgroundPosition = "80em 37em, 112em 44em";
   }
 
