@@ -2,7 +2,7 @@
     <h1>welkom Geert</h1>
     <h5>Selecteer het kinderdagverblijf</h5>
     <div class="daycares">
-        <app-daycare *ngFor="let daycare of this.daycares | async" [daycare]="daycare">
+        <app-daycare *ngFor="let daycare of this.daycares | async" [daycare]="daycare" tabindex="0">
         </app-daycare>
     </div>
 </div>

@@ -72,6 +72,11 @@ input{
     
 }
 
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
 .loginForm{
     padding : 6em 9em 6em 9em;
     display: flex;
@@ -94,6 +99,9 @@ input{
         position: absolute;
         right: 0em;
         top: 3em;
+        &:hover{
+            cursor : pointer;
+        }
     }
 }
 .login{

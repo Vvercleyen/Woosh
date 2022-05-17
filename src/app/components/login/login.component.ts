@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginForm : FormGroup;
+  showPassword = false;
+  showVerPassword = false;
 
   constructor(private router : Router, private formBuilder : FormBuilder) { 
     this.loginForm = this.formBuilder.group({
@@ -20,6 +22,14 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  togglePassword(){
+    this.showPassword = !this.showPassword
+  }
+
+  toggleVerPassword(){
+    this.showVerPassword = !this.showVerPassword
   }
 
   onSubmit(){
