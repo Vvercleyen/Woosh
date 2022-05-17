@@ -17,8 +17,11 @@
 ## little explanation
 
 I mainly focused on getting the frontend visuals correct according to this design https://xd.adobe.com/view/7b76f3be-3349-4c0b-bf74-03fc7f69d3b5-2e25/specs/
+
 I didn't invest a lot of time in architecture optimization since I think this wasn't the essence of the task.
 If I would have invested more time in this I would have, for example, Implemented lazy loading by using multiple modules that only load when neeeded.
+
+The only thing that could use some improvements would be the Reponsiveness of screens. On some devices the loginScreen isn't that pretty.
 
 
 
